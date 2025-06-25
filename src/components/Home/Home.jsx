@@ -11,35 +11,36 @@ const Home = () => {
         <div className="container">
           <div className="hero-content text-center">
             <h1 className="hero-title">
-              Transform Your Ideas into <span className="gradient-text">Digital Reality</span>
+              Build Your Own Among Us Experience Powered by
+ <span className="gradient-text"> Unreal Engine.</span> Built for Modding
             </h1>
             <p className="hero-subtitle">
-              The all-in-one platform for modern teams. Build, collaborate, and scale your business with ease.
+              We've rebuilt Among Us from the ground up in Unreal Engine — giving creators like you full freedom to request custom mods, maps, roles, and more.
             </p>
             <div className="hero-buttons">
-              <button className="primary-btn">Get Started Free</button>
+              <button className="primary-btn">💡Request a Custom Mod</button>
               <button className="secondary-btn">
                 <i className="fas fa-play"></i>
-                Watch Demo
+                Watch Game Preview
               </button>
             </div>
             <div className="hero-stats">
               <div className="stat">
-                <h3>10K+</h3>
-                <p>Active Users</p>
+                <h5>🛠 100+ Custom Mods Delivered</h5>
+                <p>Roles, mechanics, and maps tailored to your vision</p>
               </div>
               <div className="stat">
-                <h3>99.9%</h3>
-                <p>Uptime</p>
+                <h5>🎮 Among Us Reimagined</h5>
+                <p>Unreal Engine build for unlimited possibilities</p>
               </div>
               <div className="stat">
-                <h3>24/7</h3>
-                <p>Support</p>
+                <h5>💬 Fast Delivery & Direct Support</h5>
+                <p>From concept to playable in days</p>
               </div>
             </div>
           </div>
         </div>
-        <div className="floating-cards">
+        {/* <div className="floating-cards">
           <div className="floating-card">
             <i className="fas fa-bolt"></i>
             <p>Lightning Fast</p>
@@ -48,12 +49,12 @@ const Home = () => {
             <i className="fas fa-shield-alt"></i>
             <p>Secure</p>
           </div>
-        </div>
+        </div> */}
       </section>
 
       <Features />
       <Testimonials />
-      <Pricing />
+      {/* <Pricing /> */}
     </main>
   );
 };

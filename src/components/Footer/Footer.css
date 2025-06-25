@@ -47,6 +47,7 @@
 .social-links {
   display: flex;
   gap: 16px;
+  justify-content: left;
 }
 
 .social-link {
@@ -167,7 +168,7 @@
   }
 
   .social-links {
-    justify-content: center;
+    justify-content: left;
   }
 
   .footer-links {

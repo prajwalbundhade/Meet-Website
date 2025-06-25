@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -10,7 +11,11 @@ const About = () => {
           <div className="about-hero-content">
             <h1>About <span className="gradient-text">Us</span></h1>
             <p className="hero-subtitle">
-              We're on a mission to transform how teams collaborate and build amazing products together.
+              CreatorsForge is the business-focused hub behind top-tier modding services for creators.
+
+From Among Us in Unreal Engine to future expansions into Minecraft and GTA V, we help YouTubers bring their wildest gameplay ideas to life — with zero technical hassle.
+
+Built by a team that understands both creatorsand code
             </p>
           </div>
         </div>
@@ -19,120 +24,63 @@ const About = () => {
       {/* Mission Section */}
       <section className="mission-section">
         <div className="container">
-          <div className="mission-grid">
-            <div className="mission-content">
-              <h2>Our Mission</h2>
-              <p>
-                We believe in empowering teams with the tools they need to create exceptional products. 
-                Our platform combines powerful features with intuitive design to help teams work smarter, 
-                not harder.
-              </p>
-              <div className="mission-stats">
-                <div className="stat">
-                  <h3>5+</h3>
-                  <p>Years of Excellence</p>
-                </div>
-                <div className="stat">
-                  <h3>50K+</h3>
-                  <p>Happy Customers</p>
-                </div>
-                <div className="stat">
-                  <h3>24/7</h3>
-                  <p>Support</p>
-                </div>
-              </div>
+          <div className="about-table-section">
+            <h2 style={{display:'flex',alignItems:'center',gap:10,fontWeight:800,fontSize:'2rem',marginBottom:24}}>
+              <span role="img" aria-label="values">🧱</span> Our Core Values – CreatorsForge
+            </h2>
+            <div className="about-table-wrapper">
+              <table className="about-table">
+                <thead>
+                  <tr>
+                    <th>Value</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>Creators First</b></td>
+                    <td>Every feature, tool, and mod we build is designed with creators in mind — we scale <i>your</i> ideas.</td>
+                  </tr>
+                  <tr>
+                    <td><b>Innovation</b></td>
+                    <td>We experiment boldly and turn trending YouTube concepts into interactive, playable content.</td>
+                  </tr>
+                  <tr>
+                    <td><b>Collaboration</b></td>
+                    <td>We work closely with creators and devs to build mods that spark viral videos and lasting impact.</td>
+                  </tr>
+                  <tr>
+                    <td><b>Trust & Transparency</b></td>
+                    <td>We commit to clear pricing, timely deliveries, and open communication — every step of the way.</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div className="mission-image">
-              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Team Collaboration" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Values Section */}
-      <section className="values-section">
-        <div className="container">
-          <div className="section-header text-center">
-            <h2>Our Core Values</h2>
-            <p className="section-subtitle">
-              These principles guide everything we do
-            </p>
-          </div>
-          <div className="values-grid">
-            <div className="value-card">
-              <div className="value-icon">
-                <i className="fas fa-heart"></i>
-              </div>
-              <h3>Customer First</h3>
-              <p>We put our customers at the heart of every decision we make.</p>
-            </div>
-            <div className="value-card">
-              <div className="value-icon">
-                <i className="fas fa-lightbulb"></i>
-              </div>
-              <h3>Innovation</h3>
-              <p>We constantly push boundaries to create better solutions.</p>
-            </div>
-            <div className="value-card">
-              <div className="value-icon">
-                <i className="fas fa-users"></i>
-              </div>
-              <h3>Collaboration</h3>
-              <p>We believe in the power of working together.</p>
-            </div>
-            <div className="value-card">
-              <div className="value-icon">
-                <i className="fas fa-shield-alt"></i>
-              </div>
-              <h3>Trust & Security</h3>
-              <p>We maintain the highest standards of security and reliability.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Team Section */}
-      <section className="team-section">
-        <div className="container">
-          <div className="section-header text-center">
-            <h2>Meet Our Team</h2>
-            <p className="section-subtitle">
-              The passionate people behind our success
-            </p>
-          </div>
-          <div className="team-grid">
-            <div className="team-card">
-              <div className="team-image">
-                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Team Member" />
-              </div>
-              <h3>John Smith</h3>
-              <p className="position">CEO & Founder</p>
-              <div className="social-links">
-                <a href="#"><i className="fab fa-linkedin"></i></a>
-                <a href="#"><i className="fab fa-twitter"></i></a>
-              </div>
-            </div>
-            <div className="team-card">
-              <div className="team-image">
-                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="Team Member" />
-              </div>
-              <h3>Sarah Johnson</h3>
-              <p className="position">CTO</p>
-              <div className="social-links">
-                <a href="#"><i className="fab fa-linkedin"></i></a>
-                <a href="#"><i className="fab fa-twitter"></i></a>
-              </div>
-            </div>
-            <div className="team-card">
-              <div className="team-image">
-                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Team Member" />
-              </div>
-              <h3>Michael Chen</h3>
-              <p className="position">Head of Product</p>
-              <div className="social-links">
-                <a href="#"><i className="fab fa-linkedin"></i></a>
-                <a href="#"><i className="fab fa-twitter"></i></a>
-              </div>
+            <h2 style={{display:'flex',alignItems:'center',gap:10,fontWeight:800,fontSize:'2rem',margin:'48px 0 24px'}}>
+              <span role="img" aria-label="team">🧑‍💻</span> Meet the Team Behind CreatorsForge
+            </h2>
+            <div className="about-table-wrapper">
+              <table className="about-table">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>Thunderz Lucky</b></td>
+                    <td>CEO & Founder</td>
+                    <td>Visionary creator and builder of viral modding experiences. The mastermind behind CreatorsForge.</td>
+                  </tr>
+                  <tr>
+                    <td><b>Gatodev</b></td>
+                    <td>Lead Developer</td>
+                    <td>Code wizard bringing Unreal Engine mods and YouTuber concepts to life with speed and polish.</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -144,7 +92,9 @@ const About = () => {
           <div className="cta-content">
             <h2>Join Our Journey</h2>
             <p>Be part of our mission to transform how teams work together</p>
+            <Link to="/contact">
             <button className="cta-button">Get Started Free</button>
+            </Link>
           </div>
         </div>
       </section>

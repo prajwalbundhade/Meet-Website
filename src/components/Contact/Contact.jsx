@@ -36,17 +36,18 @@ const Contact = () => {
                 <i className="fas fa-envelope"></i>
               </div>
               <h3>Email Us</h3>
-              <p>support@example.com</p>
-              <p>info@example.com</p>
+              <p>contact@creatorsforge.com</p>
             </div>
 
             <div className="info-card">
               <div className="info-icon">
-                <i className="fas fa-phone-alt"></i>
+                <i className="fab fa-discord"></i>
               </div>
-              <h3>Call Us</h3>
-              <p>+1 (555) 123-4567</p>
-              <p>+1 (555) 987-6543</p>
+              <h3>Discord</h3>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', alignItems: 'center' }}>
+                <DiscordCopy id="gatodev" />
+                <DiscordCopy id="thunderzlucky" />
+              </div>
             </div>
           </div>
 
@@ -111,5 +112,36 @@ const Contact = () => {
     </main>
   );
 };
+
+function DiscordCopy({ id }) {
+  const [copied, setCopied] = React.useState(false);
+  const handleCopy = () => {
+    navigator.clipboard.writeText(id);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1200);
+  };
+  return (
+    <span
+      onClick={handleCopy}
+      style={{
+        cursor: 'pointer',
+        color: copied ? '#9c27b0' : '#fff',
+        background: 'rgba(156,39,176,0.08)',
+        borderRadius: '8px',
+        padding: '6px 14px',
+        fontWeight: 600,
+        fontSize: '1.05rem',
+        transition: 'all 0.2s',
+        userSelect: 'all',
+        border: copied ? '1px solid #9c27b0' : '1px solid rgba(255,255,255,0.1)',
+        boxShadow: copied ? '0 2px 8px rgba(156,39,176,0.15)' : 'none',
+        marginBottom: '2px',
+      }}
+      title={copied ? 'Copied!' : 'Click to copy'}
+    >
+      {id} {copied && <span style={{fontSize:'0.95em',marginLeft:6}}>Copied!</span>}
+    </span>
+  );
+}
 
 export default Contact; 

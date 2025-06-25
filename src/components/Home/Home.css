@@ -29,7 +29,7 @@
 }
 
 .hero-title {
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: #ffffff;
   margin-bottom: 30px;
   line-height: 1.2;
@@ -44,7 +44,7 @@
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
+  font-size: 1.2rem !important;
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 40px;
   line-height: 1.6;
@@ -105,8 +105,8 @@
   text-align: center;
 }
 
-.stat h3 {
-  font-size: 2.5rem;
+.stat h5 {
+  font-size: 1.5rem;
   color: #9c27b0;
   margin-bottom: 10px;
   font-weight: 700;
@@ -114,7 +114,7 @@
 
 .stat p {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 1.1rem;
+  font-size: 10px;
   font-weight: 500;
 }
 
@@ -205,12 +205,12 @@
     min-width: 140px;
   }
 
-  .stat h3 {
+  .stat h5 {
     font-size: 2rem;
   }
 
   .stat p {
-    font-size: 1rem;
+    font-size: 10px;
   }
 
   .floating-cards {
@@ -264,12 +264,12 @@
     max-width: 200px;
   }
 
-  .stat h3 {
+  .stat h5 {
     font-size: 2rem;
   }
 
   .stat p {
-    font-size: 1rem;
+    font-size: 10px;
   }
 
   .floating-cards {
@@ -304,12 +304,12 @@
     font-size: 1rem;
   }
 
-  .stat h3 {
+  .stat h5 {
     font-size: 1.8rem;
   }
 
   .stat p {
-    font-size: 0.9rem;
+    font-size: 10px;
   }
 
   .floating-card {

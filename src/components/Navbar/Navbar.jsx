@@ -27,13 +27,8 @@ const Navbar = () => {
     <nav className={`navbar navbar-expand-lg glass-navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container">
         <Link className="navbar-brand" to="/">
-          <img 
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" 
-            alt="Logo" 
-            className="navbar-logo" 
-          />
+         <h3 className='navbar-logo'>Creators Forge</h3>
         </Link>
-        
         <button 
           className="navbar-toggler" 
           type="button" 
@@ -53,11 +48,11 @@ const Navbar = () => {
                 <Link className="nav-link" to="/about">About</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/resell">Resell</Link>
+                <Link className="nav-link" to="/resell">Portfolio</Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link" to="/terms">Terms & Conditions</Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link className="nav-link" to="/contact">Contact</Link>
               </li>

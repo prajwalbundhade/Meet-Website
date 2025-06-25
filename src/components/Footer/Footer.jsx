@@ -8,13 +8,9 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-brand">
-            <img 
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png" 
-              alt="Logo" 
-              className="footer-logo" 
-            />
+            <h3>Creators Forge</h3>
             <p className="brand-description">
-              Transform your ideas into digital reality with our cutting-edge platform.
+            CreatorsForge is the business-focused hub behind top-tier modding services for creators.
             </p>
             <div className="social-links">
               <a href="#" className="social-link">
